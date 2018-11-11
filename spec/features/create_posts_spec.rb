@@ -12,7 +12,7 @@ feature 'Creating Posts' do
     fill_in 'Title', with: 'title'
       fill_in 'Caption', with: 'caption'
     # click submit button
-    click_button 'Create Update'
+    click_button 'Create Post'
     # expect pagr to havr the content we submtted
     expect(page).to have_content('title')
     expect(page).to have_content('caption')
